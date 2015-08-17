@@ -6,16 +6,17 @@ var testArray = [
   {id: 4, children: undefined}
 ];
 
-var findDeep = function(key, val) {
+var findDeep = function(key, val, result) {
+  result = result || false;
   for ( var i in this ) {
     if ( this.hasOwnProperty(i) ) {
         if ( this[i][key] == val )
           return this[i];
         if ( this[i].children )
-          return findDeep.call(this[i].children, key, val);
+          result = findDeep.call(this[i].children, key, val, result);
     }
   }
-  return false;
+  return result;
 };
 
 testArray.find = findDeep;
