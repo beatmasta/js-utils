@@ -1,6 +1,3 @@
-// This is one of Google's popular interview questions 
-// (c) Alex Vanyan
-
 function findKthMax(arr, k) {
 
     if (!arr || !arr.length || arr.length < k) return null;
@@ -14,11 +11,11 @@ function findKthMax(arr, k) {
             newArr.unshift(num);
             max = num;
         }
-        
+
     }
 
     return newArr[k - 1];
-    
+
 }
 
 const intArray = [3, 4, 5, 12, 56, 123, 5598, 2, 1, 1, 0, -1];
