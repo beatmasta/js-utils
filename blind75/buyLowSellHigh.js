@@ -13,8 +13,8 @@ function buyLowSellHigh(arr) {
 	while (r < arr.length) {
   	
     if (arr[l] < arr[r]) {
-    	const profit = arr[r] - arr[l];
-      max = Math.max(max, profit);
+	const profit = arr[r] - arr[l];
+	max = Math.max(max, profit);
     } else {
     	l = r;
     }
