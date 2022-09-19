@@ -1,3 +1,4 @@
+// LEVEL: Easy
 // Given array of integers [arr] - every integer in the array represents the stock price on the next day;
 // Solution type: two-pointer
 // Check which day should stock be bought and on which should be sold to gain max profit (note: stock can't be sold on one of the previous days [prev array elements]);
